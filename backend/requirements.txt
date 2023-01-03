@@ -1,0 +1,8 @@
+fastapi
+SQLAlchemy
+pydantic
+PyMySQL
+pydantic[email]
+passlib[bcrypt]
+python-multipart
+python-jose[cryptography]
