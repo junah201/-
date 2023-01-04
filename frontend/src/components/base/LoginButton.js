@@ -3,9 +3,11 @@ import React from "react";
 const buttonStyle = {
 	backgroundColor: "transparent",
 	color: "#ffffff",
+	textDecoration: "none",
+	fontSize: "2vw",
 };
 
-const LoginButton = (props) => {
+const LoginButton = () => {
 	return (
 		<div className="Header">
 			<div

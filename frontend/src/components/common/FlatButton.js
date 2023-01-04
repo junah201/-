@@ -8,8 +8,8 @@ const FlatButton = (props) => {
 				backgroundColor: "transparent",
 				color: "#ffffff",
 				border: "0.2vw solid #ffffff",
-				fontSize: "2vw",
-				padding: "0.6vw",
+				fontSize: "1.5vw",
+				padding: "0.4vw",
 				textDecoration: "none",
 			}}
 		>

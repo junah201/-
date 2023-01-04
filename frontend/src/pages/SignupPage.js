@@ -56,7 +56,6 @@ const SignupPage = () => {
 			},
 			body: JSON.stringify(body),
 		}).then((res) => {
-			console.log(res);
 			if (res.status === 204) {
 				alert("회원가입이 완료되었습니다.");
 				navigate(`/`);

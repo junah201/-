@@ -12,7 +12,7 @@ from starlette import status
 from app.database import models, schemas, crud
 from app.database.database import engine, get_db
 
-from app.routers import user_router
+from app.routers.v1 import user_router, post_router
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -29,6 +29,7 @@ app.add_middleware(
 
 
 app.include_router(user_router.router)
+app.include_router(post_router.router)
 
 
 @app.exception_handler(RequestValidationError)

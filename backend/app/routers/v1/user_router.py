@@ -46,8 +46,6 @@ def login_for_access_token(
     }
     access_token = jwt.encode(data, SECRET_KEY, algorithm=ALGORITHM)
 
-    print(f"access_token: {access_token} (type: {type(access_token)})")
-
     return schemas.Token(
         access_token=access_token,
         token_type="bearer",
